@@ -1,11 +1,10 @@
-
 // declare the variable that can be changed.  
 // leave the variable without a value 
-_____ target;
+var target;
 
 
 // declare a variable that cannot be changed.  Remember it's conststant
-_______ humanGuessInput = document.getElementById('human-guess');
+const humanGuessInput = document.getElementById('human-guess');
 
 // change the variable name so that it's camelCase format
 const ROUNDNUMBERDISPLAY = document.getElementById('round-number');
@@ -26,7 +25,7 @@ guessButton.addEventListener('click', () => {
   // Retrieve the player's guess
   const currentHumanGuess = humanGuessInput.value;
   // Make a random 'computer guess' between values of 0 and 10
-  const computerGuess = Math.floor(Math._________() * _____);
+  const computerGuess = Math.floor(Math.random() * 10);
 
   // Display the computer guess and the target
   computerGuessDisplay.innerText = computerGuess;
